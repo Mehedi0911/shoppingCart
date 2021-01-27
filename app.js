@@ -2,6 +2,15 @@ const plusBtn = document.getElementById("plusBtn");
 const minusBtn = document.getElementById("minusBtn");
 const CaseItemAddBtn = document.getElementById("CaseItemAdd");
 const CaseItemRemoveBtn = document.getElementById("CaseItemRemove");
+const checkOutBtn = document.getElementById("checkOutBtn");
+
+checkOutBtn.addEventListener("click", function(){
+    const cart = document.getElementById("shopping-cart");
+    const confirmation = document.getElementById("confirmation");
+    cart.style.display = "none";
+    confirmation.style.display = "block";
+
+})
 
 
 
@@ -77,6 +86,7 @@ function updateGrandTotal(){
 
 
 }
+
 
 
 
